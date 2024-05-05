@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SpriteTable>
 	<NpcSprites>
-		<Sprite id="1" src="01" name="World Goombario"/>
+		<Sprite id="1" src="01 - World Whittle" name="World Whittle"/>
 		<Sprite id="2" src="02" name="World Kooper"/>
 		<Sprite id="3" src="03" name="World Bombette"/>
 		<Sprite id="4" src="04" name="World Parakarry"/>
@@ -9,7 +9,7 @@
 		<Sprite id="6" src="06" name="World Watt"/>
 		<Sprite id="7" src="07" name="World Sushie"/>
 		<Sprite id="8" src="08" name="World Lakilester"/>
-		<Sprite id="9" src="09" name="Battle Goombario"/>
+		<Sprite id="9" src="09 - Battle Whittle" name="Battle Whittle"/>
 		<Sprite id="A" src="0A" name="Battle Kooper"/>
 		<Sprite id="B" src="0B" name="Battle Bombette"/>
 		<Sprite id="C" src="0C" name="Battle Parakarry"/>
@@ -107,7 +107,7 @@
 		<Sprite id="68" src="68" name="Tutankoopa"/>
 		<Sprite id="69" src="69" name="Chain Chomp"/>
 		<Sprite id="6A" src="6A" name="World Tubba"/>
-		<Sprite id="6B" src="6B" name="Battle Tubba"/>
+		<Sprite id="6B" src="6B - Dry Tubba Blubba" name="Dry Tubba Blubba"/>
 		<Sprite id="6C" src="6C" name="Tubbas Heart"/>
 		<Sprite id="6D" src="6D" name="Big Lantern Ghost"/>
 		<Sprite id="6E" src="6E" name="Shy Squad Guy"/>
@@ -234,7 +234,7 @@
 		<Sprite id="E7" src="E7" name="Parade Shy Guys"/>
 		<Sprite id="E8" src="E8" name="Parade Twink"/>
 		<Sprite id="E9" src="E9" name="Leaf"/>
-		<Sprite id="EA" src="EA" name="Necromancer"/>
+		<Sprite id="EA" src="EA - Koopamancer" name="Necromancer"/>
 	</NpcSprites>
 	<PlayerSprites>
 		<Sprite id="1" src="01" name="Mario 1"/>
