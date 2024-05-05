@@ -8,6 +8,8 @@ cache
 
 # original game data
 src
+strings/font
+strings/textbox
 raw
 /audio/**/*.*
 !/audio/**/*.xml
