@@ -1,0 +1,221 @@
+#message:2F:000
+{
+[Style right]
+[SizeWave][Speed delay=2 chars=1][BR]
+[Up 5]THE ORIGINAL INVINCIBLE ONE,[Pause 20][BR]
+[DOWN 10]YOUR REIGN IS FAR FROM DONE![Pause 10][BR]
+[BR]
+[Wait][Next]
+[SizeWave][BR]
+[Up 10]I ASK YOU TO LEAVE YOUR DEN,[Pause 20][BR]
+[DOWN 10]SO YOU MAY RISE ONCE AGAIN![Pause 10][BR][Wait][End]
+}
+
+#message:2F:001
+{
+[Style right]
+[SizeWave][Speed delay=2 chars=1][BR]
+[Up 5]MAY I BESTOW YOU WITH SOUL,[Pause 15][BR]
+[DOWN 10]A PART OF MY UNDEAD PATROL![Pause 10][BR]
+[BR]
+[Wait][Next]
+[SizeWave][BR]
+[Up 10]BRITTLE BONES WITH DRY SKIN,[Pause 15][BR]
+[DOWN 10]NOW SHOW YOUR ANGER WITHIN![Pause 10][BR][Wait][End]
+}
+
+#message:2F:002
+{
+[Style right]
+Let me see...[Pause 20] it should[BR]
+be in here somewhere...[Pause 40][BR]
+[Wait][Next]
+...[BR][Pause 10]
+...[BR][Pause 30]
+This should do the trick.[BR]
+[Wait][End]
+}
+
+#message:2F:003
+{
+[Style right]
+Uh, [Pause 20]this is awkward...[Pause 15][BR]
+I said you guys were joining the[BR]
+Undead Patrol and all[Pause 10] but I need[BR]
+that life force back now.[BR]
+[Wait][Next]
+And this is on me,[Pause 10] you guys are[BR]
+the best minions a necromancer[BR]
+can ask for.[Pause 15] To be fair Mario is[BR]
+still kicking but still.[BR]
+[Wait][Next]
+No hard feeling right?[BR][Pause 15]
+Just promise me I will not be[BR]
+treated differently when I join[BR]
+you guys in the afterlife.[BR]
+[Wait][End]
+}
+
+#message:2F:004
+{
+[Style right]
+[Shake]Puff... [Pause 20]I can't believe[Pause 15] a plumber[Pause 15][BR]
+is pushing me[Pause 15] to my limit...[BR][Pause 30]
+I'm the evil... [Pause 20]The powerful...[Pause 30] THE[BR]
+ONE AND ONLY KOOPAMANCER!!![BR]
+[Wait][Next]
+My trump card,[Pause 15] it's the only [BR]way.[Pause 30] But before I show that.[BR][Pause 30]
+Spirits of the forest...[BR][Pause 30]
+Lend me your strength![BR]
+[Wait][End]
+}
+
+#message:2F:005
+{
+[Style right]
+Ah, much better.[BR][Pause 15]
+I do need some space for this.[BR][Pause 10]
+So let me just quickly...[BR]
+[Wait][End]
+}
+
+#message:2F:006
+{
+[Style right]
+Now, the stage has been set.[BR][Pause 15]
+Let the fun begin.[BR][Pause 10]
+[Wait][End]
+}
+
+#message:2F:007
+{
+[Style right]
+Ah, much better.[BR][Pause 15]
+Let me get to a safe spot real[BR]
+quick...[BR]
+[Wait][End]
+}
+
+#message:2F:008
+{
+[Style right]
+[Shake]IMPOSSIBLE.[BR][Pause 15]
+I've taken too much damage.[BR]
+[Wait][Next]
+I really wish it didn't have to[BR]
+come to this.[BR]
+[Wait][End]
+}
+
+#message:2F:009
+{
+[Style right]
+[Shake][SizeWave][Speed delay=2 chars=1][BR]
+[Up 5]GOD OF DEATH,[Pause 10] HEAR MY CALL,[Pause 20][BR]
+[DOWN 10]I NEED STRENGTH,[Pause 10] THAT IS ALL.[Pause 10][BR]
+[BR]
+[Wait][Next]
+[SizeWave][BR]
+[Up 10]THIS CONTRACT IS MY TOLL,[Pause 20][BR]
+[DOWN 10]NOW TURN ME INTO PURE SOUL![Pause 10][BR][Wait][End]
+}
+
+#message:2F:00A
+{
+[Style right]
+[DitherFade percent=85]Well... [Pause 15]This is it...[Pause 20][BR]It's official...[BR][Pause 15]
+I gave up everything...[BR][Pause 15]
+My Koopranomicon...[Pause 10] My body...[BR]
+[Wait][Next]
+I even signed a contract with[BR]
+the God of Death that I would[BR]
+lose my pudding privileges on[BR]
+Deadly Desserts Thurdays.[BR]
+[Wait][Next]
+But only ice cream in the[BR]
+afterlife has to do.[Pause 20] Because[BR]
+that is how determined I am![BR][Pause 20]
+[Wave]I WILL DEFEAT YOU!!![BR][/fx]
+[Wait][End]
+}
+
+#message:2F:00B
+{
+[Style right]
+[DitherFade percent=85]This is going nowhere...[BR]
+[Wait][End]
+}
+
+#message:2F:00C
+{
+[Style right]
+[DitherFade percent=85]Oh,[Pause 15] I have a great idea![BR]
+[Wait][End]
+}
+
+#message:2F:00D
+{
+[Style right]
+[Wave]I MADE A MISTAKE![BR][PAUSE 10]
+BODY POSSESSION REMOVED HIS[BR]
+TOTAL INVINCIBILITY!![BR][PAUSE 10]
+[Wait][Next]
+[Wave]
+[Speed delay=1 chars=1][Wave][PrintRising]NOOOOOOOOOOOOOOOOOO!![BR]
+[Wait][End]
+}
+
+#message:2F:00E
+{
+[Style right]
+[DitherFade percent=85]Now I know what happens when[BR]you lose your Koopranomicon.[BR][Pause 15]
+I completely lost control of[BR]
+my beast.[BR]
+[Wait][Next]
+I guess I have to finish this[BR]
+fight on my own.[BR][Pause 15]
+Prepare yourself,[Pause 10] Mario.[BR]
+[Wait][End]
+}
+
+#message:2F:00F
+{
+[Style right]
+Much better![BR][Pause 15]
+Now that I'm in total control,[BR][Pause 10]
+I will absolutely destroy you![BR][Pause 15]
+[Wave]LET'S SETTLE THIS,[Pause 10] MARIO![BR][/fx]
+[Wait][End]
+}
+
+#message:2F:010
+{
+[Style right]
+[PrintRising][Wave]HOW DARE YOU ENTER[BR]
+MY DOMAIN?![BR][Pause 10][/fx][/fx]
+[Speed delay=2 chars=1]You will pay for this![BR][Pause 15]
+[Speed delay=1 chars=1][Wave][PrintRising]WITH YOUR SOUL![BR]
+[Wait][End]
+}
+
+#message:2F:011
+{
+[Style right]
+Wait a minute...[BR][Pause 15]
+[Wave]YOU'RE MARIO![BR][Pause 20][/fx]
+Quite the famous plumber indeed.[BR]
+[Wait][Next]
+Your soul will be quite valuable.[BR][Pause 20]
+So...[BR][Pause 20]
+[Wave]I WILL NOT HOLD BACK![/fx][BR]
+[Wait][End]
+}
+
+#message:2F:012
+{
+[Style right]
+I'll see you in the afterlife...[BR][Pause 25]
+[Speed delay=10 chars=1][Wave]MARIO!!![BR][Pause 20][/fx]
+[Wait][End]
+}
+

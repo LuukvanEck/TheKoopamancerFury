@@ -1,0 +1,105 @@
+@ $Script_802A27FC
+{
+    0:  ExecWait  $Script_802A2184
+    C:  Call  PlayerTestEnemy   ( *Var0 ~Flags:DamageType:Jump 00000000 00000000 00000001 00000000 )
+   30:  If  *Var0  ==  .HitResult:Miss % 6
+   40:  	ExecWait  $Script_802A1FEC
+   4C:  	Return
+   54:  EndIf
+   5C:  ExecWait  $Script_802A26B4
+   68:  Wait  1`
+   74:  Call  DidActionSucceed  ( *Var0 )
+   84:  Switch  *Var0
+   90:  	Case  >  .False
+   9C:  		Call  SetActorSounds    ( .Actor:Player .ActorSound:Hurt 0000015A 00000000 )
+   B8:  		Call  PlayerDamageEnemy ( *Var0 ~Flags:DamageType:Fire 00000000 00000000 00000004 00000070 )
+   DC:  	Default
+   E4:  		Call  SetActorSounds    ( .Actor:Player .ActorSound:Hurt 0000015A 00000000 )
+  100:  		Call  PlayerDamageEnemy ( *Var0 ~Flags:DamageType:Jump 00000000 00000000 00000004 00000030 )
+  124:  EndSwitch
+  12C:  Switch  *Var0
+  138:  	Case  >  .HitResult:Hit % 0
+  144:  		ExecWait  $Script_802A15D8
+  150:  	Default
+  158:  		ExecWait  $Script_802A17C4
+  164:  EndSwitch
+  16C:  Return
+  174:  End
+}
+
+@ $Script_802A2978
+{
+    0:  ExecWait  $Script_802A2184
+    C:  Call  PlayerTestEnemy   ( *Var0 ~Flags:DamageType:Jump 00000000 00000000 00000001 00000000 )
+   30:  If  *Var0  ==  .HitResult:Miss % 6
+   40:  	ExecWait  $Script_802A1FEC
+   4C:  	Return
+   54:  EndIf
+   5C:  ExecWait  $Script_802A26B4
+   68:  Wait  1`
+   74:  Call  DidActionSucceed  ( *Var0 )
+   84:  Switch  *Var0
+   90:  	Case  >  .False
+   9C:  		Call  SetActorSounds    ( .Actor:Player .ActorSound:Hurt 0000015B 00000000 )
+   B8:  		Call  PlayerDamageEnemy ( *Var0 ~Flags:DamageType:Fire 00000000 00000000 00000005 00000070 )
+   DC:  	Default
+   E4:  		Call  SetActorSounds    ( .Actor:Player .ActorSound:Hurt 0000015B 00000000 )
+  100:  		Call  PlayerDamageEnemy ( *Var0 ~Flags:DamageType:Jump 00000000 00000000 00000005 00000030 )
+  124:  EndSwitch
+  12C:  Switch  *Var0
+  138:  	Case  >  .HitResult:Hit % 0
+  144:  		ExecWait  $Script_802A15D8
+  150:  	Default
+  158:  		ExecWait  $Script_802A17C4
+  164:  EndSwitch
+  16C:  Return
+  174:  End
+}
+
+@ $Script_802A2AF4
+{
+    0:  ExecWait  $Script_802A2184
+    C:  Call  PlayerTestEnemy   ( *Var0 ~Flags:DamageType:Jump 00000000 00000000 00000001 00000000 )
+   30:  If  *Var0  ==  .HitResult:Miss % 6
+   40:  	ExecWait  $Script_802A1FEC
+   4C:  	Return
+   54:  EndIf
+   5C:  ExecWait  $Script_802A26B4
+   68:  Wait  1`
+   74:  Call  DidActionSucceed  ( *Var0 )
+   84:  Switch  *Var0
+   90:  	Case  >  .False
+   9C:  		Call  SetActorSounds    ( .Actor:Player .ActorSound:Hurt 0000015C 00000000 )
+   B8:  		Call  PlayerDamageEnemy ( *Var0 ~Flags:DamageType:Fire 00000000 00000000 00000006 00000070 )
+   DC:  	Default
+   E4:  		Call  SetActorSounds    ( .Actor:Player .ActorSound:Hurt 0000015C 00000000 )
+  100:  		Call  PlayerDamageEnemy ( *Var0 ~Flags:DamageType:Jump 00000000 00000000 00000006 00000030 )
+  124:  EndSwitch
+  12C:  Switch  *Var0
+  138:  	Case  >  .HitResult:Hit % 0
+  144:  		ExecWait  $Script_802A15D8
+  150:  	Default
+  158:  		ExecWait  $Script_802A17C4
+  164:  EndSwitch
+  16C:  Return
+  174:  End
+}
+
+@ $Script_802A26B4
+{
+    0:  Call  StartRumble   ( 0000000B )
+   10:  Thread
+   18:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[0.75] )
+   34:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[3.0] )
+   50:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[4.5] )
+   6C:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[3.0] )
+   88:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[2.0] )
+   A4:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[1.0] )
+   C0:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[0.5] )
+   DC:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[0.2] )
+   %F8:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[0.2] )
+  %114:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[0.2] )
+  130:  EndThread
+  138:  Return
+  140:  End
+}

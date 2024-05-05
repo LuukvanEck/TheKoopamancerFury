@@ -1,0 +1,104 @@
+@ $Script_UseMove0
+{
+    0:  Call  EnablePlayerBlur  ( 00000001 )
+   10:  Call  802694A4  ( 00000001 )
+   20:  Call  GetMenuSelection  ( *Var0 *Var1 *Var2 )
+   38:  Switch  *Var1
+   44:  	Case  ==  00000000 % 0
+   50:  		Set   *VarD  0000002D
+   60:  		Set   *VarE  00000004
+   70:  		Set   *VarF  00000004
+   80:  		ExecWait  $Script_802A32D0
+   8C:  	Case  ==  .Item:Jump % 1
+   98:  		Set   *VarD  0000002D
+   A8:  		Set   *VarE  00000005
+   B8:  		Set   *VarF  00000005
+   C8:  		ExecWait  $Script_802A32D0
+   D4:  	Case  ==  .Item:SpinJump % 2
+   E0:  		Set   *VarD  0000002D
+   F0:  		Set   *VarE  00000006
+  100:  		Set   *VarF  00000006
+  110:  		ExecWait  $Script_802A32D0
+  11C:  EndSwitch
+  124:  Call  EnablePlayerBlur  ( 00000000 )
+  134:  Return
+  13C:  End
+}
+
+@ $Script_802A32D0
+{
+    0:  Call  GetMenuSelection  ( *Var0 *Var1 *Var2 )
+   18:  Switch  *Var1
+   24:  	Case  ==  00000000 % 0
+   30:  		ExecWait  $Script_802A1B40
+   3C:  	Case  ==  .Item:Jump % 1
+   48:  		ExecWait  $Script_802A2000
+   54:  	Case  ==  .Item:SpinJump % 2
+   60:  		ExecWait  $Script_802A23E8
+   6C:  EndSwitch
+   74:  Call  PlayerTestEnemy   ( *Var0 ~Flags:DamageType:Fire 00000019 00000000 00000000 00000010 )
+   98:  Call  UseBattleCamPreset      ( 0000002C )
+   A8:  Wait  1`
+   B4:  ExecWait  $Script_802A3188
+   C0:  Call  PlayerTestEnemy   ( *Var0 ~Flags:DamageType:Fire 00000019 00000000 00000000 00000010 )
+   E4:  If  *Var0  ==  .HitResult:Miss % 6
+   F4:  	ExecWait  $Script_802A1A64
+  100:  	Return
+  108:  EndIf
+  110:  Call  DidActionSucceed  ( *Var0 )
+  120:  Switch  *Var0
+  12C:  	Case  >  .False
+  138:  		Call  GetMenuSelection  ( *Var0 *Var1 *Var2 )
+  150:  		Switch  *Var1
+  15C:  			Case  ==  00000000 % 0
+  168:  				Call  PlaySoundAtActor  ( .Actor:Player 000000E9 )
+  17C:  			Case  ==  .Item:Jump % 1
+  188:  				Call  PlaySoundAtActor  ( .Actor:Player 0000010E )
+  19C:  			Case  ==  .Item:SpinJump % 2
+  1A8:  				Call  PlaySoundAtActor  ( .Actor:Player 0000010E )
+  1BC:  		EndSwitch
+  1C4:  		Call  PlayerDamageEnemy ( *Var0 ~Flags:DamageType:Fire 00000019 00000000 *VarF 00000070 )
+  1E8:  	Default
+  1F0:  		Call  GetMenuSelection  ( *Var0 *Var1 *Var2 )
+  208:  		Switch  *Var1
+  214:  			Case  ==  00000000 % 0
+  220:  				Call  PlaySoundAtActor  ( .Actor:Player 000000E9 )
+  234:  			Case  ==  .Item:Jump % 1
+  240:  				Call  PlaySoundAtActor  ( .Actor:Player 0000010E )
+  254:  			Case  ==  .Item:SpinJump % 2
+  260:  				Call  PlaySoundAtActor  ( .Actor:Player 0000010E )
+  274:  		EndSwitch
+  27C:  		Call  PlayerDamageEnemy ( *Var0 ~Flags:DamageType:Smash 00000019 00000000 *VarE 00000030 )
+  2A0:  EndSwitch
+  2A8:  Switch  *Var0
+  2B4:  	CaseOR  ==  00000001 % 1
+  2C0:  	CaseOR  ==  00000003 % 3
+  2CC:  		ExecWait  $Script_802A18AC
+  2D8:  	EndCaseGroup
+  2E0:  	CaseOR  ==  .HitResult:Hit % 0
+  2EC:  	CaseOR  ==  00000002 % 2
+  2F8:  		ExecWait  $Script_802A1A64
+  304:  	EndCaseGroup
+  30C:  EndSwitch
+  314:  Return
+  31C:  End
+}
+
+@ $Script_802A3188
+{
+    0:  Call  StartRumble   ( 0000000B )
+   10:  Thread
+    18:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[0.75] )
+    34:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[3.0] )
+    50:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[4.5] )
+    6C:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[3.0] )
+    88:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[2.0] )
+    A4:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[1.0] )
+    C0:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[0.5] )
+    DC:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[0.2] )
+  % F8:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[0.5] )
+ % 114:  	Call  ShakeCam  ( .Cam:Battle 00000000 00000002 *Fixed[0.2] )
+  130:  EndThread
+  138:  Return
+  140:  End
+}

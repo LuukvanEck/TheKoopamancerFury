@@ -1,0 +1,757 @@
+% String sections:
+%   29: enemy name
+%   1C: tattle
+
+#message:29:083
+{
+The Koopamancer[End]
+}
+#message:1C:096
+{
+[Style right]
+Is that...[Pause 15] The Koopamancer?[BR]
+[Pause 15]Wasn't he named The Necrokoopa?[BR]
+[Pause 10]The Koopamancer studied the[BR]
+dark arts of Koopamancy![BR]
+[Wait][Next]
+Max HP: 99,[BR]
+Defense Power: 1,[BR]
+Weakness: Fire,[BR]
+Immunity: Water, Ice, Shock.[BR]
+[Wait][Next]
+He uses all kind of different[BR]
+spells but his main weapon is his[BR]
+Scythe.[Pause 10] Make sure to block those[BR]
+attacks! [Pause 10]Trust me on this.[BR]
+[Wait][Next]
+His specialty is the control of[BR]
+life force.[Pause 10] He can drain it and[BR]
+use it to reanimate the dead.[BR][Pause 10]
+[Pause 20] [Wave]THE DEAD?![/fx] [Pause 20]Talk about gross![BR]
+[Wait][Next]
+He's also weak to fire,[Pause 10] so [BR]
+use that to defeat him![BR][Pause 10]
+Don't worry Mario, [Pause 10]we got this![BR][Pause 10]
+I believe in us [HEART]!!![BR]
+[Wait][End]
+}
+
+#message:29:084
+{
+Spirit Essence[End]
+}
+#message:1C:097
+{
+[Style right]
+Wait... Is that your soul?![BR]
+[Pause 15]No,[Pause 5] just part of it.[BR]
+[Pause 10]Talk about freaky.[BR]
+[Wait][Next]
+Max HP: 15, Attack Power: 0,[BR]
+Defense Power: 0,[BR]
+Weakness: -,[BR]
+Immunity: -.[BR]
+[Wait][Next]
+I'm sure he can use this Spirit[BR]
+Essence in all kind of ways.[BR][Pause 10]
+Let's destroy it before we[BR]
+can find out![BR]
+[Wait][End]
+}
+
+#message:29:085
+{
+Dry Blubba[End]
+}
+#message:1C:098
+{
+[Style right]
+This creature resembles Tubba[BR]
+Blubba.[Pause 10] Wait...[Pause 10] That can't be him.[BR]
+I suspect that this is maybe his[BR]
+... [Pause 5]Father?[Pause 10] ... Grandfather?[Pause 10][BR]
+[Wait][Next]
+Max HP: 10, Attack Power: 6,[BR]
+Defense Power: ???,[BR]
+Weakness: [CROSS],[BR]
+Immunity: Damage.[BR]
+[Wait][Next]
+Just like his alive counterpart,[BR][Pause 10]
+it seems that this guy is[BR]
+completely invincible.[BR][Pause 15]
+Talk about cheap![BR]
+[Wait][Next]
+How did the Koopamancer know[BR]
+a beast like this was buried[BR]
+here?![Pause 10] It probably has something[BR]
+to do with that Koopamancy.[BR]
+[Wait][Next]
+My advice would be to focus all[BR]
+our power on the Koopamancer![BR][Pause 10]
+Maybe this guy will also perish[BR]
+if we take out his master.[BR]
+[Wait][End]
+}
+
+#message:29:086
+{
+The Koopamancer's Soul[End]
+}
+
+#message:1C:099
+{
+[Style right]
+Is... [Pause 10]Is that his final form?![BR][Pause 20]
+It seems his soul has taken a[BR]
+physical appearance...[Pause 10] He looks[BR]
+rather weak if you ask me.[BR]
+[Wait][Next]
+Max HP: 99, Attack Power: 2,[BR]
+Defense Power: 0,[BR]
+Weakness: [CROSS],[BR]
+Immunity: Water, Ice, Shock.[BR]
+[Wait][Next]
+The Koopamancer? [Pause 10]More like The[BR]
+Soulmancer.[Pause 20] That one only worked[BR]
+in my head I'm afraid[Pause 10].[Pause 10].[Pause 10].[BR]
+[BR]
+[Wait][Next]
+"Jokes" aside,[Pause 10] he regained his[BR]
+HP but lost power,[Pause 10] so let's[BR]
+overwhelm him with attacks![BR][Pause 15]
+The hard part is over![BR]
+[Wait][End]
+}
+
+#message:29:087
+{
+Possessed Blubba[End]
+}
+
+#message:1C:09A
+{
+[Style right]
+The Koopamancer used his final[BR]
+trick to possess Mr. Blubba.[BR][Pause 15]
+His eyes even started to glow[BR]
+a bright purple color.[BR]
+[Wait][Next]
+Max HP: 10, Attack Power: 6,[BR]
+Defense Power: 2,[BR]
+Weakness: Fire,[BR]
+Immunity: [CROSS].[BR]
+[Wait][Next]
+It seems the Koopamancer made[BR]
+a big mistake.[Pause 15] His soul turned[BR]
+the once invincible Mr. Blubba[BR]
+into the now mortal Blubba.[BR]
+[Wait][Next]
+It seems that a single strong[BR]
+fire move will finish him off![BR][Pause 15]
+Let's end this fight Mario![BR]
+[Wait][End]
+}
+/%
+#string:29:084 {Undead Whittle[END]}
+#string:1C:097 {
+	[STYLE:RIGHT][SpeechSound:01][...]
+	.[PAUSE:08].[PAUSE:08].[PAUSE:0F]
+	That is a Undead Whittle.[PAUSE:0A]
+	I didn't want to encounter them.
+	These guys have no mercy.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 4
+	Attack Power: 1
+	Defense Power: 1
+	[DelayOn][WAIT][NEXT][...]
+	Undead Whittle's are weak to
+	fire and explosives.[PAUSE:06]
+	This is the only way to kill
+	them for good!
+	[WAIT][END]
+}
+
+#string:29:085 {Withered Piranha Plant[END]}
+#string:1C:098 {
+	[STYLE:RIGHT][SpeechSound:01][...]
+	Oh no...[PAUSE:0C]
+	A Withered Piranha Plant.[PAUSE:0A]
+	These plants are very toxic.
+	You need to block their attacks.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 5
+	Attack Power: 3
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Avoid getting poisened by
+	these plants![PAUSE:09]
+	Fire should be effective
+	against these plants though!
+	[WAIT][END]
+}
+
+#string:29:087 {The Whittle King[END]}
+#string:1C:09A {
+	[STYLE:RIGHT][SpeechSound:01][...]
+	Why is father attacking us?[PAUSE:08]
+	This is not like him.[PAUSE:0F]
+	Something weird is going on.
+	[WAIT][NEXT][...]
+	Nevermind that for now,[PAUSE:02]
+	Father is a difficult foe.[PAUSE:0F]
+	He uses the Staff of Life.[PAUSE:02]
+	He can cast spells with that.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 40
+	Attack Power: 3
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Let's give it our all Mario![PAUSE:0A]
+	...[PAUSE:0F]
+	...[PAUSE:0F]
+	I'm sorry dad.
+	[WAIT][END]
+}
+
+#string:29:088 {Motos[END]}
+#string:1C:09B {
+	[STYLE:RIGHT][SpeechSound:01][...]
+	Why is father attacking us?[PAUSE:08]
+	This is not like him.[PAUSE:0F]
+	Something weird is going on.
+	[WAIT][NEXT][...]
+	Nevermind that for now,[PAUSE:02]
+	Father is a difficult foe.[PAUSE:0F]
+	He uses the Staff of Life.[PAUSE:02]
+	He can cast spells with that.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 40
+	Attack Power: 3
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Let's give it our all Mario![PAUSE:0A]
+	...[PAUSE:0F]
+	...[PAUSE:0F]
+	I'm sorry dad.
+	[WAIT][END]
+}
+
+#string:29:089 {Willo of Destruction[END]}
+#string:1C:09C {
+	[STYLE:RIGHT][SpeechSound:01][...]
+	Why is father attacking us?[PAUSE:08]
+	This is not like him.[PAUSE:0F]
+	Something weird is going on.
+	[WAIT][NEXT][...]
+	Nevermind that for now,[PAUSE:02]
+	Father is a difficult foe.[PAUSE:0F]
+	He uses the Staff of Life.[PAUSE:02]
+	He can cast spells with that.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 40
+	Attack Power: 3
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Let's give it our all Mario![PAUSE:0A]
+	...[PAUSE:0F]
+	...[PAUSE:0F]
+	I'm sorry dad.
+	[WAIT][END]
+}
+
+#string:29:08A {Kab-omb[END]}
+#string:1C:09D {
+	[STYLE:RIGHT][SpeechSound:01][...]
+	Why is father attacking us?[PAUSE:08]
+	This is not like him.[PAUSE:0F]
+	Something weird is going on.
+	[WAIT][NEXT][...]
+	Nevermind that for now,[PAUSE:02]
+	Father is a difficult foe.[PAUSE:0F]
+	He uses the Staff of Life.[PAUSE:02]
+	He can cast spells with that.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 40
+	Attack Power: 3
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Let's give it our all Mario![PAUSE:0A]
+	...[PAUSE:0F]
+	...[PAUSE:0F]
+	I'm sorry dad.
+	[WAIT][END]
+}
+
+/%
+#string:2F:077 {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	That's a Craw Bones. It says
+	they're dead Craws.[PAUSE:0A]
+	I bet they're not too happy
+	to be so rudely awoken.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 3
+	Attack Power: 1 x3
+	Defense Power: 1
+	[DelayOn][WAIT][NEXT][...]
+	Craw Bones won't reanimate
+	unless provoked. We can put
+	them to rest permanently
+	with fire or explosives.
+	[WAIT][END]
+}
+
+#string:29:073 {Purple Magikoopa[END]}
+#string:1C:084 {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	Whoa, a Purple Magikoopa![PAUSE:04]
+	These foes are versed in the
+	art (and horrors) of dark magic.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 7
+	Attack Power: 3
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Watch out for their wicked
+	magic spells!
+	[WAIT][NEXT][...]
+	And be careful - it says
+	they can raise the dead too.[PAUSE:0A]
+	Wait...[PAUSE:04] the [StartFX:Shrinking]DEAD?![EndFX:Shrinking]
+	[WAIT][END]
+}
+#string:2F:084 {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	Whoa, a Purple Magikoopa![PAUSE:04]
+	These foes are versed in the
+	art (and horrors) of dark magic.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 7
+	Attack Power: 3
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Watch out for their wicked
+	magic spells!
+	[WAIT][NEXT][...]
+	And be careful - it says
+	they can raise the dead too.[PAUSE:0A]
+	Wait...[PAUSE:04] the [StartFX:Shrinking]DEAD?![EndFX:Shrinking]
+	[WAIT][END]
+}
+#string:1C:085 {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	Whoa, a Purple Magikoopa![PAUSE:04]
+	These foes are versed in the
+	art (and horrors) of dark magic.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 7
+	Attack Power: 3
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Watch out for their wicked
+	magic spells!
+	[WAIT][NEXT][...]
+	You can knock this flying
+	one to the ground with a
+	well-timed jump.
+	[WAIT][NEXT][...]
+	And be careful - it says
+	they can raise the dead too.[PAUSE:0A]
+	Wait...[PAUSE:04] the [StartFX:Shrinking]DEAD?![EndFX:Shrinking]
+	[WAIT][END]
+}
+#string:2F:085 {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	Whoa, a Purple Magikoopa![PAUSE:04]
+	These foes are versed in the
+	art (and horrors) of dark magic.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 7
+	Attack Power: 3
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Watch out for their wicked
+	magic spells!
+	[WAIT][NEXT][...]
+	You can knock this flying
+	one to the ground with a
+	well-timed jump.
+	[WAIT][NEXT][...]
+	And be careful - it says
+	they can raise the dead too.[PAUSE:0A]
+	Wait...[PAUSE:04] the [StartFX:Shrinking]DEAD?![EndFX:Shrinking]
+	[WAIT][END]
+}
+
+#string:29:083 {Boo[END]}
+#string:1C:096 {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	[StartFX:Shrinking]BOO!![EndFX:Shrinking][PAUSE:10] It's a Boo, Mario.[PAUSE:04]
+	Get it?[PAUSE:04] Ha ha!
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 6
+	Attack Power: 3
+	Attack Power: 1 (hidden)
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	These bullies will usually spook
+	from the front, but sometimes
+	they'll attack from behind.[PAUSE:0A]
+	They don't scare me!
+	[WAIT][NEXT][...]
+	Boos will hide when their HP
+	is low.[PAUSE:04] We can't hit them when
+	they're hidden, but they can't
+	hurt us as much either.
+	[WAIT][NEXT][...]
+	They're not so tough when
+	exposed, Mario.[PAUSE:0A]
+	Maybe there's a way to get them
+	to come out and play...
+	[WAIT][END]
+}
+#string:2F:096 {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	[StartFX:Shrinking]BOO!![EndFX:Shrinking][PAUSE:10] It's a Boo, Mario.[PAUSE:04]
+	Get it?[PAUSE:04] Ha ha!
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 6
+	Attack Power: 3
+	Attack Power: 1 (hidden)
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	These bullies will usually spook
+	from the front, but sometimes
+	they'll attack from behind.[PAUSE:0A]
+	They don't scare me!
+	[WAIT][NEXT][...]
+	Boos will hide when their HP
+	is low.[PAUSE:04] We can't hit them when
+	they're hidden, but they can't
+	hurt us as much either.
+	[WAIT][NEXT][...]
+	They're not so tough when
+	exposed, Mario.[PAUSE:0A]
+	Maybe there's a way to get them
+	to come out and play...
+	[WAIT][END]
+}
+
+
+#string:29:088 {Bone Goomba[END]}
+#string:1C:09B {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	That's a Bone Goomba.[PAUSE:04]
+	It's a Goomba with bone armor![PAUSE:04]
+	Other than that, they're pretty
+	standard Goombas.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 3
+	Attack Power: 2
+	Defense Power: [STAR]
+	Defense Power: 0 (unarmored)
+	[DelayOn][WAIT][NEXT][...]
+	It takes just one strong
+	attack to break their armor and
+	reduce their defense to zero.
+	[WAIT][NEXT][...]
+	Sounds like it's time to
+	bash some skulls in!
+	[WAIT][END]
+}
+
+#string:29:089 {Bone Paragoomba[END]}
+#string:1C:09C {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	That's a Bone Paragoomba.[PAUSE:04]
+	It's a Paragoomba with bone armor![PAUSE:04]
+	Other than that, they're pretty
+	standard Paragoombas.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 3
+	Attack Power: 2
+	Defense Power: [STAR]
+	Defense Power: 0 (unarmored)
+	[DelayOn][WAIT][NEXT][...]
+	It takes just one strong
+	attack to break their armor and
+	reduce their defense to zero.
+	[WAIT][NEXT][...]
+	Sounds like it's time to
+	bash some skulls in!
+	[WAIT][END]
+}
+
+#string:29:08A {Spiked Bone Paragoomba[END]}
+#string:1C:09D {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	That's a Spiked Bone Paragoomba.[PAUSE:04]
+	It's a Spiked Paragoomba with bone armor![PAUSE:04]
+	Other than that, they're pretty
+	standard Spiked Paragoombas.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 3
+	Attack Power: 2
+	Defense Power: [STAR]
+	Defense Power: 0 (unarmored)
+	[DelayOn][WAIT][NEXT][...]
+	It takes just one strong
+	attack to break their armor and
+	reduce their defense to zero.
+	[WAIT][NEXT][...]
+	Sounds like it's time to
+	bash some skulls in!
+	[WAIT][END]
+}
+
+#string:2F:09B {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	That's a Bone Goomba.[PAUSE:04]
+	It's a Goomba with bone armor![PAUSE:04]
+	Other than that, they're pretty
+	standard Goombas.
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 5
+	Attack Power: 3
+	Defense Power: [STAR]
+	Defense Power: 0 (unarmored)
+	[DelayOn][WAIT][NEXT][...]
+	It takes just one strong
+	attack to break their armor and
+	reduce their defense to zero.
+	[WAIT][NEXT][...]
+	Sounds like it's time to
+	bash some skulls in!
+	[WAIT][END]
+}
+
+#string:29:056 {Swoopula[END]}
+#string:1C:05C {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	I think this is a Swoopula.[PAUSE:0A]
+	Sorry, it's hard to see in
+	this darkness...
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 5
+	Attack Power: 1 x5
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Swoopulas cling to the ceiling.
+	If we're able to hit them,
+	they'll fall down.
+	[WAIT][NEXT][...]
+	Don't let them suck the
+	life out of you, Mario.[PAUSE:04]
+	Mash [PushColor][Color:10][A][PopColor] to throw them off!
+	[WAIT][NEXT][...]
+	Huh, it also says here that
+	we should avoid eating them.[PAUSE:10]
+	Wonder what that's about...?
+	[WAIT][END]
+}
+#string:2F:05C {
+	[STYLE:RIGHT][SpeechSound:02][...]
+	I think this is a Swoopula.[PAUSE:0A]
+	Sorry, it's hard to see in
+	this darkness...
+	[WAIT][NEXT][DelayOff][...]
+	Max HP: 5
+	Attack Power: 1 x5
+	Defense Power: 0
+	[DelayOn][WAIT][NEXT][...]
+	Swoopulas cling to the ceiling.
+	If we're able to hit them,
+	they'll fall down.
+	[WAIT][NEXT][...]
+	Don't let them suck the
+	life out of you, Mario.[PAUSE:04]
+	Mash [PushColor][Color:10][A][PopColor] to throw them off!
+	[WAIT][NEXT][...]
+	Huh, it also says here that
+	we should avoid eating them.[PAUSE:10]
+	Wonder what that's about...?
+	[WAIT][END]
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                             %%%
+%%%                    MISC                     %%%
+%%%                                             %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% TODO: hard mode (section 2F) tattles for these!!
+
+#string:29:085
+{
+Uproot[END]
+}
+
+#string:1C:098 % TODO
+{
+[STYLE:RIGHT][SpeechSound:02][...]
+That's an Uproot.
+[WAIT][END]
+}
+
+
+#string:29:086
+{
+Pineupple[END]
+}
+
+#string:1C:099 % TODO
+{
+[STYLE:RIGHT][SpeechSound:02][...]
+That's a Pineupple.
+[WAIT][END]
+}
+
+
+#string:29:087
+{
+Pider[END]
+}
+
+#string:1C:09A % TODO
+{
+[STYLE:RIGHT][SpeechSound:02][...]
+That's a Pider.
+[WAIT][END]
+}
+
+#string:29:084
+{
+Cheep Cheep[END]
+}
+
+#string:1C:097 % TODO
+{
+[STYLE:RIGHT][SpeechSound:02][...]
+This is a Cheep Cheep.
+[WAIT][NEXT][...]
+Max HP: 6, Attack Power: 2, % FIXME
+Defense Power: 0
+[WAIT][NEXT][...]
+They normally swim along
+minding their own fishy
+business, but it looks like
+we've annoyed this one!
+[WAIT][NEXT][...]
+When battled on water, it
+heals 2 HP every turn.
+Other than that, it's just
+a fish.
+[WAIT][END]
+}
+
+#string:29:070
+{
+Red Magikoopa[END]
+}
+
+#string:1C:07E
+{
+[STYLE:RIGHT][SpeechSound:02][...]
+That's a Red Magikoopa.[PAUSE:04]
+They can magically increase the
+attack power of others.
+[WAIT][NEXT][DelayOff][...]
+Max HP: 6
+Attack Power: 1
+Defense Power: 0
+Attack Magic: 1
+[DelayOn][WAIT][NEXT][...]
+Despite their red robes,
+they're not very strong
+on their own.
+[WAIT][NEXT][...]
+Mario, we should take care of
+this Magikoopa before it can
+pump up its companions!
+[WAIT][END]
+}
+
+% Flying
+#string:1C:07F
+{
+[STYLE:RIGHT][SpeechSound:02][...]
+That's a Red Magikoopa.[PAUSE:04]
+They can magically increase the
+attack power of others.
+[WAIT][NEXT][DelayOff][...]
+Max HP: 6
+Attack Power: 1
+Defense Power: 0
+Attack Magic: 1
+[DelayOn][WAIT][NEXT][...]
+Despite their red robes,
+they're not very strong
+on their own.
+[WAIT][NEXT][...]
+You can knock this flying
+one to the ground with a
+well-timed jump.
+[WAIT][NEXT][...]
+Mario, we should take care of
+this Magikoopa before it can
+pump up its companions!
+[WAIT][END]
+}
+
+
+#string:29:074
+{
+White Magikoopa[END]
+}
+
+#string:1C:086
+{
+[STYLE:RIGHT][SpeechSound:02][...]
+A White Magikoopa...[PAUSE:04]
+These guys heal their
+companions. How nice of them!
+[WAIT][NEXT][DelayOff][...]
+Max HP: 6
+Attack Power: 0
+Defense Power: 0
+Healing Magic: [STAR]
+[DelayOn][WAIT][NEXT][...]
+Although they're unable to
+attack, these Magikoopas can
+fully heal wounded companions.
+[WAIT][NEXT][...]
+If we had one of them on
+our team, we'd never need
+a Mushroom again!
+[WAIT][END]
+}
+
+% Flying
+#string:1C:087
+{
+[STYLE:RIGHT][SpeechSound:02][...]
+A White Magikoopa...[PAUSE:04]
+These guys heal their
+companions. How nice of them!
+[WAIT][NEXT][DelayOff][...]
+Max HP: 6
+Attack Power: 0
+Defense Power: 0
+Healing Magic: [STAR]
+[DelayOn][WAIT][NEXT][...]
+Although they're unable to
+attack, these Magikoopas can
+fully heal wounded companions.
+[WAIT][NEXT][...]
+You can knock this flying
+one to the ground with a
+well-timed jump.
+[WAIT][NEXT][...]
+If we had one of them on
+our team, we'd never need
+a Mushroom again!
+[WAIT][END]
+}
+
+%/

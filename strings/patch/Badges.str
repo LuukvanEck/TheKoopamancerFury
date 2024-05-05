@@ -1,0 +1,35 @@
+#string:2A:001 {Fire Jump[End]}
+
+#string:26:059 {Fire Jump[End]}
+
+#string:23:059 
+{
+	Mario stomps on a single enemy[BR]
+	using the fire element.[End]
+}
+
+#string:25:059 
+{
+	Lets you do a Fire Jump.[BR]
+	Uses 4 FP.[BR]
+	Hit the action command and[BR]
+	Mario will do fire damage.[End]
+}
+
+#string:2A:00B {Fire Smash[End]}
+
+#string:26:063 {Fire Smash[End]}
+
+#string:23:063 
+{
+	Hammers an enemy using[BR]
+	the fire element.[End]
+}
+
+#string:25:063 
+{
+	Lets you do a Fire Smash.[BR]
+	Uses 4 FP.[BR]
+	Hit the action command and[BR]
+	Mario will do fire damage.[End]
+}

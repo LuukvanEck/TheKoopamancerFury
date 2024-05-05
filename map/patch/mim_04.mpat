@@ -1,0 +1,229 @@
+#define .NpcID:Necromancer            02
+#define .NpcID:Joe                    03
+
+@ $Script_Main_EnterWalk
+{
+    0:  Set   *GB_WorldLocation  .Location:ForeverForest
+   10:  Call  SetSpriteShading  ( .Shading:mim_04 )
+   20:  Call  SetCamPerspective ( .Cam:Default 00000003  25`  16`  650` )
+   40:  Call  SetCamBGColor ( .Cam:Default  0`  0`  0` )
+   5C:  Call  SetCamEnabled ( .Cam:Default .True )
+   70:  Call  SetCamLeadPlayer  ( .Cam:Default .False )
+   84:  Set   *AreaByte[2]  *GB_MIM_CurrentMapID
+   94:  Call  GetMapID      ( *GB_MIM_CurrentMapID )
+   A4:  ExecWait  $Script_80242360
+   B0:  Call  MakeNpcs      ( .True $NpcGroupList_80242D34 )
+   C4:  Set   *Var0  $Script_80241360
+   D4:  Exec  EnterWalk
+   E0:  Wait  1`
+   EC:  Exec  $Script_802411B0
+   F8:  Exec  $Script_802415C0
+  104:  Call  $Function_80240000 ( )
+  110:  Call  SetCamSpeed   ( .Cam:Default *Fixed[3.0] )
+  124:  Return
+  12C:  End
+}
+
+@ $NpcGroupList_80242D34
+{
+	00000001 $NpcGroup_80242B44 0D080001
+  00000001 $JoeTrivio 00000000
+	00000000 00000000 00000000
+}
+
+@ $NpcGroup_80242B44
+{
+	.NpcID:Necromancer $NpcSettings_802425E8 ~Vec3f:Necromancer % 0 32 0
+	00000801 $Script_Init_802428D8 00000000 00000000 0000010E
+	~NoDrops
+	~Movement:Necromancer
+	00EA0001 00EA0001 00EA0001 00EA0001 00EA0001 00EA0001 00EA0018 00EA0018
+  00EA0001 00EA0001 00EA0001 00EA0001 00EA0001 00EA0001 00EA0001 00EA0001
+	00000000 00000000 00000000 001A00A3 % Oh! It's a Bub-ulb. The flower we saw must be the  ...
+}
+
+#new:NpcGroup $JoeTrivio
+{
+	.NpcID:Joe $NpcSettings_Joe ~Vec3f:Joe % 0 32 0
+	00000801 $Script_Init_Joe 00000000 00000000 0000010E
+	~NoDrops
+	~Movement:Joe
+	00AF0123 00AF0123 00AF0123 00AF0123 00AF0123 00AF0123 00AF0123 00AF0123
+  00AF0123 00AF0123 00AF0123 00AF0123 00AF0123 00AF0123 00AF0123 00AF0123
+	00000000 00000000 00000000 00000000 % Oh! It's a Bub-ulb. The flower we saw must be the  ...
+}
+
+@ $NpcSettings_802425E8
+{
+	00000000 002A001A $Script_80241870 00000000 $Script_NpcAI_Necromancer 00000000 00000000 00000000
+	00000000 00000000 00630000
+}
+
+#new:NpcSettings  $NpcSettings_Joe
+{
+	00000000 002A001A $Script_802425D8 00000000 $Script_NpcAI_JoeTrivio 00000000 00000000 00000000
+	00000000 00000000 00630000
+}
+
+
+@ $Script_Init_802428D8
+{
+    %0:  Call  BindNpcInteract   ( .Npc:Self $Script_Interact_80242678 )
+        Call  SetNpcAnimation   ( .Npc:Self 00EA0001 )
+        Call  BindNpcDefeat ( .Npc:Self $Script_Defeat_Necromancer )
+        Call  SetNpcScale   ( .NpcID:Necromancer *Fixed[0.0] *Fixed[0.0] *Fixed[0.0] )
+   6C:  Return
+   74:  End
+}
+
+#new:Script $Script_NpcAI_Necromancer{
+    0:  Loop     
+    C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  	Call     GetNpcPos   	( 00000001 *Var[3] *Var[4] *Var[5] )
+  160:  Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+   90:  	If  *Var0  >=  -84`   
+				If *Var0 < 167`
+          If *Var2 >= -100`
+            If *Var2 < 150`
+   C0:  			BreakLoop
+            EndIf
+				EndIf
+      EndIf
+   D8:  	EndIf
+   E0:  	Wait     1` 
+   EC:  EndLoop
+  110:  Call     DisablePlayerInput 	( .True )
+		Wait     00000003
+   F4:  Call     SetMusicTrack 	( 00000000 .Song:TwinkTheme 00000000 00000008 )
+  %161:  Call     SetNpcAnimation 	( .Npc:Self 00AF0101 )
+  121:  Wait	 0000000A
+  160:  Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+  %162:  Call     SetNpcAnimation    ( .Npc:Self 00AF0104)
+        Call  SpeakToPlayer ( .Npc:Self 00EA0001 00EA0001 00000000 002F0010 )
+  18C:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  C4C:  	Wait     0000000A 
+  C58:  	Call     DisablePlayerInput 	( .False )
+  C68:  	Call     StartBossBattle 	( .Song:TwinkTheme )
+  C80:  Return
+  C88:  End
+}
+
+#new:Script $Script_NpcAI_JoeTrivio{
+  0:  Loop     
+160:  Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+Wait 1`
+  EndLoop
+C80:  Return
+C88:  End
+}
+
+#new:Script $Script_Init_Joe{
+  Call  SetNpcAnimation   ( .Npc:Self 00AF0123 )
+  %ExecWait $Script_Joe_Trivio
+  Return
+  End
+}
+
+#new:Script $Script_Joe_Trivio
+{
+    %0:  Call  BindNpcInteract   ( .Npc:Self $Script_Interact_80242678 )
+        Call  SetNpcAnimation   ( .Npc:Self 00AF0123 )
+   6C:  Return
+   74:  End
+}
+
+@ $Script_Interact_80242678
+{
+        %Call     StartBossBattle 	( .Song:TubbaBlubbaTheme )
+        Call     StartBossBattle 	( .Song:TwinkTheme )
+  250:  Return
+  258:  End
+}
+
+#new:Script $Script_Defeat_Necromancer
+{
+  Call     DisablePlayerInput 	( .True )
+    Call  SetMusicTrack     ( 00000000 .Song:ForeverForest 00000000 00000008 )
+    Set  *Flag_MIM_07  1` 
+    Call  SetNpcScale   ( .NpcID:Necromancer *Fixed[1.0] *Fixed[1.0] *Fixed[1.0] )
+    Call  SetNpcAnimation   ( .Npc:Self 00EA0041 )
+    Call  SpeakToPlayer ( .Npc:Self 00EA0041 00EA0041 00000000 002F0012 )
+    Call  SetNpcAnimation   ( .Npc:Self 00EA0048 )
+    Wait 60` 
+    Call DisablePlayerInput ( .False )
+    Call RemoveNpc ( .Npc:Self )
+    50:		  	Call     EnableNpcShadow 	( .Npc:Self .False )	
+    Call     DisablePlayerInput 	( .False )
+    Return
+    End
+}
+
+@ $ASCII_80242D60
+{
+	"mim_04"
+}
+
+@ $ASCII_80242D68
+{
+	"mim_04"
+}
+
+@ $ASCII_80242D70
+{
+	"mim_04"
+}
+
+@ $Script_ExitWalk_802411F0
+{
+    0:  SetGroup  0000001B
+    C:  Call  UseExitHeading    ( 0000003C ~Entry:Entry0 )
+   20:  Exec  ExitWalk
+   2C:  Call  GotoMap   ( $ASCII_80242D60 00000002 ) % mim_05
+   40:  Wait  100`
+   4C:  Return
+   54:  End
+}
+
+@ $Script_ExitWalk_8024124C
+{
+    0:  SetGroup  0000001B
+    C:  Call  UseExitHeading    ( 0000003C ~Entry:Entry1 )
+   20:  Exec  ExitWalk
+   2C:  Call  GotoMap   ( $ASCII_80242D68 00000001 ) % mim_01
+   40:  Wait  100`
+   4C:  Return
+   54:  End
+}
+
+@ $Script_ExitWalk_802412A8
+{
+    0:  SetGroup  0000001B
+    C:  Call  UseExitHeading    ( 0000003C ~Entry:Entry2 )
+   20:  Exec  ExitWalk
+   2C:  Call  GotoMap   ( $ASCII_80242D68 00000001 ) % mim_01
+   40:  Wait  100`
+   4C:  Return
+   54:  End
+}
+
+@ $Script_ExitWalk_80241304
+{
+    0:  SetGroup  0000001B
+    C:  Call  UseExitHeading    ( 0000003C ~Entry:Entry3 )
+   20:  Exec  ExitWalk
+   2C:  Call  GotoMap   ( $ASCII_80242D70 00000001 ) % mim_03
+   40:  Wait  100`
+   4C:  Return
+   54:  End
+}
+
+#new:Script $Script_80241870{
+			If  *Flag_MIM_07 == 1`
+				Call RemoveNpc ( .Npc:Self )
+   50:		  	Call     EnableNpcShadow 	( .Npc:Self .False )	
+			Else
+   50:		  	Call     EnableNpcShadow 	( .Npc:Self .True )	
+			EndIf
+   6C:  Return
+   74:  End
+  }

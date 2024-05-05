@@ -1,0 +1,81 @@
+#string:1D:007 {Whittle[End]}
+
+% Overworld party select
+#string:28:000 {
+	Press [C-DOWN] to have him tell you[BR]
+	about everything nearby.[End]
+}
+
+% Battle party select - TODO
+#string:28:001 {
+	He can describe enemies and[BR]
+	attack using his wood powers.[End]
+}
+
+% Pause screen
+#string:28:006 {
+	Whittle is a species of rare[BR]
+	tree spirits. He's very clever.[BR]
+	Press [C-DOWN] to have him tell you[BR]
+	about anything nearby.[BR]
+	His specialty lies in using his[BR]
+	many special wood powers.[BR]
+	[End]
+}
+
+% Ability names
+#string:2B:000 {Wood Tackle[End]}
+#string:2B:001 {Tattle[End]}
+#string:2B:002 {Explosive Log[End]}
+#string:2B:003 {Spirits Will[End]}
+
+% Ability descriptions (in-battle)
+#string:28:002 {
+	Dash at an enemy.[End]
+}
+/%
+#string:28:003 {
+	Read up on an enemy. If successful,
+	it doesn't use up Spark's turn.[END]
+}%/
+#string:28:004 {
+	Whittle will throw an explosive[BR]
+	cylinder at an enemy.[End]
+}
+#string:28:005 {
+	Wish for a cube of water to boost[BR]
+	Mario's defense briefly.[End]
+}
+
+% Ability descriptions (pause screen)
+#string:28:007 {
+	Dash at an enemy.[End]
+}
+#string:28:008 {
+	Dash at an enemy.[End]
+}
+#string:28:009 {
+	Dash at an enemy.[End]
+}
+#string:28:00A {
+	See enemy descriptions[BR]
+	and their HP during battle.[End]
+}
+#string:28:00B {
+	Throw an explosive wooden[BR]
+	cylinder at an enemy.[End]
+}
+#string:28:00C {
+	Wish for a cube of water from[BR]
+	the ancient Tree of Life.[End]
+}
+
+#string:1D:0E0 {
+He'll master Explosive Log.[BR]
+Use explosives to defeat enemies.[End]
+}
+
+#string:1D:0E1 {
+He'll master Spirits Will.[BR]
+Wish for water cubes.[End]
+}
