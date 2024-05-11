@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SpriteSheet maxComponents="8" paletteGroups="2">
 	<PaletteList>
-		<Palette id="0" src="Palette_00.png"/>
-		<Palette id="1" src="Palette_01.png"/>
-		<Palette id="2" src="Palette_02.png"/>
-		<Palette id="3" src="Palette_03.png"/>
-		<Palette id="4" src="Palette_04.png"/>
-		<Palette id="5" src="Palette_05.png"/>
-		<Palette id="6" src="Palette_06.png"/>
-		<Palette id="7" src="Palette_07.png"/>
-		<Palette id="8" src="Palette_08.png"/>
-		<Palette id="9" src="Palette_09.png"/>
+		<Palette id="0" src="Koopamancer.png"/>
+		<Palette id="1" src="Scythe.png"/>
+		<Palette id="2" src="GreenSoul.png"/>
+		<Palette id="3" src="Burnt.png"/>
+		<Palette id="4" src="Necronomicon.png"/>
+		<Palette id="5" src="SkullProjectile.png"/>
+		<Palette id="6" src="KoopamancerSoul.png"/>
+		<Palette id="7" src="ScytheProjectile.png"/>
+		<Palette id="8" src="ChargedScythe.png"/>
+		<Palette id="9" src="ScytheGlow.png"/>
 		<Palette id="A" src="Palette_0A.png"/>
 	</PaletteList>
 	<RasterList>
