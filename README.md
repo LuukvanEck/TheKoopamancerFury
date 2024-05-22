@@ -4,6 +4,10 @@ Can you defeat the powerful and menacing KOOPAMANCER?!
 
 Part of the [Star Haven Battle Jam](https://itch.io/jam/star-haven-battle-mod-jam)
 
+# Get It
+
+Check the [releases](https://github.com/LuukvanEck/TheKoopamancerFury/releases) for the latest download.
+
 ## New Additions:
 
 This Paper Mario 64 mod adds a whole new boss battle, 2 new badges specifically made for this boss fight and a new partner to help you.
